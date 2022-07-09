@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: "Raleway", sans-serif;
+  }
+
+/*----HEADER------*/
+.header {
+    background-image: url(../multimedia/gym_header.jpg);
+    background-color: black;
+    background-repeat: repeat;    
+    background-position: center;
+    height: 11rem;
+  }
+/*-----MENÚ PRINCIPAL-----*/
+.header__navbar ul {
+    padding: 2rem;
+    list-style-type: none;
+    text-align: center;
+  }
+  .header__navbar li {
+    display: inline-block;
+  }
+  .header__navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: gray;
+    color: rgba(24, 93, 158, 0.945);
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  /*-----FOOTER-----*/
+
+.footer {
+    background-color: black;
+    color: white;
+   padding: 2rem;
+    height: 11rem;
+
+  }
+  
+  .footer__flex{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  } 
+  .footer__navegacion{
+  font-size: 0.8rem;
+  text-align: center;
+  }
+  .footer__menu{
+  list-style: none;
+  text-align: center;
+  }
+   .footer__menu a{
+  
+    color:rgba(24, 93, 158, 0.945);
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+  
+  .footer__creditos{
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  
+  .enlace{
+    color: rgba(24, 93, 158, 0.945);
+    text-decoration: none;
+    font-size: 0.6rem;
+  }

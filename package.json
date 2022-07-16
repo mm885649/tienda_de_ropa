@@ -1,0 +1,19 @@
+{
+  "name": "primera_entrega_de_proyecto_final-original",
+  "version": "1.0.0",
+  "description": "<h1>Comision 37125<h/1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mm885649/tienda-_de_ropa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mm885649/tienda-_de_ropa/issues"
+  },
+  "homepage": "https://github.com/mm885649/tienda-_de_ropa#readme"
+}

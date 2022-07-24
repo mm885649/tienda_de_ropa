@@ -1,9 +1,12 @@
-@import "variable";
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
+}
+
+html {
+    background-color: tan;
   }
   /* ======== CONFIGURACIÓN DE INDEX ========== */
   body {
@@ -13,80 +16,46 @@
   
   /*   ======== ESTILOS DE HEADER ========== */
   
-  header {
-    background-image: url(../multimedia/gym_header.jpg);
+header{
+  background-image: url(../multimedia/gym_header.jpg);
+  background-color: black;
+  background-repeat: repeat;    
+  background-position: center;
+  height: 11rem;
+}
+  
+  .navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style-type: none;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 7rem;
-  }
-  
-  nav {
-    width: 60%;
-    margin: 0 10px 0 0;
-  }
-  
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: gray;
-    color: rgba(24, 93, 158, 0.945);
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: 50px;
-  }
-  
+    
+    
+}
+
   /*   ======== ESTILOS DE MAIN ========== */
   
-  .grid_padre {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 300px auto;
-    grid-template-areas:
-      "titulo titulo titulo"
-      "texto texto im1"
-      "im2 im3 im4"
-      "pie pie pie"
-      "derecho derecho derecho";
-  
-    justify-items: center;
-    align-content: center;
+  .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
   }
   
-  header {
-    grid-area: titulo;
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
   }
-  p {
-    grid-area: texto;
-  }
-  
-  .ropa1 {
-    grid-area: im1;
-  }
-  .ropa2 {
-    grid-area: im2;
-  }
-  .ropa3 {
-    grid-area: im3;
-  }
-  .ropa4 {
-    grid-area: im4;
+  .card{
+      background: transparent;
+      text-align: center;
   }
   
-  .footer {
-    grid-area: pie;
-  }
-  .footer_copyright {
-    grid-area: derecho;
+  h2{
+    text-align: center;
   }
   
   /*   ======== ESTILOS DE FOOTER ========== */
@@ -96,23 +65,28 @@
     text-align: center;
     color: white;
   
-    padding: 2rem;
-    height: 15rem;
+    padding: 5rem;
+    height: 10.5rem;
   
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    list-style-type: none;
+    
   }
   
   .nav_footer {
     width: 100%;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
   
     color: white;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 6rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
+
+list-style-type: none;
   }
   
   .a_footer {
@@ -120,9 +94,14 @@
     text-transform: uppercase;
     background-color: black;
     color: rgba(24, 93, 158, 0.945);
-    padding: 1rem;
+    padding: rem;
     font-size: 1rem;
     font-weight: 600;
+    
+  }
+
+  li{
+    list-style-type: none;
   }
   
   .footer_copyright {
@@ -252,9 +231,17 @@
   
     grid-area:pai ;
   }
+  
   .tennis_infantil{
   
-    grid-area:ti ;
+    grid-area:ti;
+  }
+
+  .imagenes__productos{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
   }
   
   /* MOBILE FIRST */
@@ -264,7 +251,7 @@
       display: grid;
       grid-template-areas:
       "h ph"
-      "pah"th"
+      "pah th"
       "m pm"
       "pam tm"
       "i pi"

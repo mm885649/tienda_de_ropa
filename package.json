@@ -1,0 +1,24 @@
+{
+  "name": "primera_entrega_de_proyecto_final-original",
+  "version": "1.0.0",
+  "description": "<h1>Comision 37125<h/1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css","watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mm885649/tienda-_de_ropa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mm885649/tienda-_de_ropa/issues"
+  },
+  "homepage": "https://github.com/mm885649/tienda-_de_ropa#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

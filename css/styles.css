@@ -27,6 +27,10 @@ header {
   list-style-type: none;
   text-align: center; }
 
+.nav-link {
+  background-color: grey;
+  font-size: 30px; }
+
 /*   ======== ESTILOS DE MAIN ========== */
 .card-container {
   display: flex;
@@ -184,3 +188,26 @@ li {
     grid-template-areas: "titulo titulo titulo" "h m i" "ph pm pi" "pah pam pai" "th tm ti"  "pie pie pie" "derecho derecho derecho";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 300px 50px 300px 50px 300px auto; } }
+
+/* ======== CONFIGURACIÓN DE GALERÍA ========== */
+.galeria {
+  text-align: center;
+  margin: 2rem; }
+
+.marcas {
+  text-align: center;
+  margin: 2rem; }
+
+.productos {
+  display: flex;
+  justify-content: space-around; }
+
+.productos__imagenes {
+  display: flex;
+  height: 25rem;
+  width: 25rem;
+  border: solid; }
+
+h4 {
+  text-align: center;
+  margin: 1.5rem; }

@@ -24,14 +24,18 @@ header{
   height: 11rem;
 }
   
+
   .navbar-nav{
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     list-style-type: none;
     text-align: center;
-    
-    
+}
+
+.nav-link{
+background-color: grey;
+font-size: 30px;  
 }
 
   /*   ======== ESTILOS DE MAIN ========== */
@@ -163,6 +167,8 @@ list-style-type: none;
   
   /* ======== CONFIGURACIÓN DE PRODUCTOS ========== */
   
+
+
   .grid_productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -299,3 +305,37 @@ list-style-type: none;
   
   
   }
+
+
+  /* ======== CONFIGURACIÓN DE GALERÍA ========== */
+
+  
+  .galeria{
+    text-align: center;
+    margin:2rem;
+  }
+
+  .marcas{
+    text-align: center;
+    margin:2rem;
+  }
+
+  .productos{
+display: flex;
+justify-content: space-around;
+
+  }
+
+  .productos__imagenes{
+    display: flex;
+    height: 25rem;
+    width: 25rem;
+    border: solid;
+  }
+
+ h4{
+    text-align: center;
+    margin: 1.5rem;
+  }
+
+

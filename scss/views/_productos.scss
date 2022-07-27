@@ -1,0 +1,84 @@
+/* ======== CONFIGURACIÓN DE PRODUCTOS ========== */
+  
+
+
+.grid_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 300px 50px 300px 50px 300px auto;
+    grid-template-areas:
+      "titulo titulo titulo"
+      "h m i"
+      "ph pm pi"
+      "pah pam pai"
+      "th tm ti" 
+      "pie pie pie"
+      "derecho derecho derecho";
+  
+    justify-items: center;
+    align-content: center;
+  }
+  
+  .hombres {
+  
+    grid-area: h;
+  }
+  .playeras_hombre{
+  
+    grid-area: ph;
+  } 
+  .pants_hombre{
+  
+    grid-area: pah ;
+  }
+  .tennis_hombre{
+  
+    grid-area:th ;
+  }
+  
+  
+  
+  
+  
+  .mujeres {
+  
+    grid-area: m;
+  }
+  .playeras_mujer {
+  
+    grid-area: pm;
+  }
+  .pants_mujer{
+  
+    grid-area:pam ;
+  }
+  .tennis_mujer{
+  
+    grid-area:tm;
+  }
+  
+  
+  .infantil {
+  
+    grid-area: i;
+  }
+  .playeras_infantil{
+  
+    grid-area: pi;
+  }
+  .pants_infantil{
+  
+    grid-area:pai ;
+  }
+  
+  .tennis_infantil{
+  
+    grid-area:ti;
+  }
+
+  .imagenes__productos{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+  }

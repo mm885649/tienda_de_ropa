@@ -105,7 +105,13 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 300px 50px 300px 50px 300px auto;
-  grid-template-areas: "titulo titulo titulo" "h m i" "ph pm pi" "pah pam pai" "th tm ti"  "pie pie pie" "derecho derecho derecho";
+  grid-template-areas: "titulo titulo titulo"
+ "h m i"
+ "ph pm pi"
+ "pah pam pai"
+ "th tm ti" 
+ "pie pie pie"
+ "derecho derecho derecho";
   justify-items: center;
   align-content: center; }
 
@@ -155,7 +161,12 @@ h4 {
 @media only screen and (max-width: 480px) {
   .grid_padre {
     display: grid;
-    grid-template-areas: "titulo titulo" "texto texto" "im1 im2" "im3 im4" "pie pie" "derecho derecho";
+    grid-template-areas: "titulo titulo"
+ "texto texto"
+ "im1 im2"
+ "im3 im4"
+ "pie pie"
+ "derecho derecho";
     grid-template-rows: 50px 150px auto auto;
     grid-template-columns: 50% 50%; } }
 
@@ -163,7 +174,11 @@ h4 {
 @media screen and (max-width: 768px) {
   .grid_padre {
     display: grid;
-    grid-template-areas: "titulo titulo titulo" "texto texto im1" "im2 im3 im4" "pie pie pie" "derecho derecho derecho";
+    grid-template-areas: "titulo titulo titulo"
+ "texto texto im1"
+ "im2 im3 im4"
+ "pie pie pie"
+ "derecho derecho derecho";
     grid-template-rows: 50px 150px auto auto;
     grid-template-columns: 50% 50%; } }
 
@@ -171,7 +186,11 @@ h4 {
 @media screen and (max-width: 1200px) {
   .grid_padre {
     display: grid;
-    grid-template-areas: "titulo titulo titulo" "texto texto im1" "im2 im3 im4" "pie pie pie" "derecho derecho derecho";
+    grid-template-areas: "titulo titulo titulo"
+ "texto texto im1"
+ "im2 im3 im4"
+ "pie pie pie"
+ "derecho derecho derecho";
     grid-template-rows: 50px 150px auto auto;
     grid-template-columns: 50% 50%; } }
 
@@ -179,7 +198,14 @@ h4 {
 @media only screen and (max-width: 480px) {
   grid_productos {
     display: grid;
-    grid-template-areas: "h ph" "pah th" "m pm" "pam tm" "i pi" "pai ti " "pie pie" "derecho derecho";
+    grid-template-areas: "h ph"
+ "pah th"
+ "m pm"
+ "pam tm"
+ "i pi"
+ "pai ti "
+ "pie pie"
+ "derecho derecho";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 300px 50px 300px 50px 300px auto; } }
 
@@ -187,7 +213,13 @@ h4 {
 @media screen and (min-width: 768px) {
   grid_productos {
     display: grid;
-    grid-template-areas: "titulo titulo titulo" "h m i" "ph pm pi" "pah pam pai" "th tm ti"  "pie pie pie" "derecho derecho derecho";
+    grid-template-areas: "titulo titulo titulo"
+ "h m i"
+ "ph pm pi"
+ "pah pam pai"
+ "th tm ti" 
+ "pie pie pie"
+ "derecho derecho derecho";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 300px 50px 300px 50px 300px auto; } }
 
@@ -195,7 +227,13 @@ h4 {
 @media screen and (min-width: 1200px) {
   grid_productos {
     display: grid;
-    grid-template-areas: "titulo titulo titulo" "h m i" "ph pm pi" "pah pam pai" "th tm ti"  "pie pie pie" "derecho derecho derecho";
+    grid-template-areas: "titulo titulo titulo"
+ "h m i"
+ "ph pm pi"
+ "pah pam pai"
+ "th tm ti" 
+ "pie pie pie"
+ "derecho derecho derecho";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 300px 50px 300px 50px 300px auto; } }
 

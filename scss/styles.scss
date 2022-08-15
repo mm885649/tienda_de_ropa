@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+html {
+    background-color: tan;
+  }
+  /* ======== CONFIGURACIÓN DE INDEX ========== */
+  body {
+    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  /*   ======== ESTILOS DE HEADER ========== */
+  
+header{
+  background-image: url(../multimedia/gym_header.jpg);
+  background-color: black;
+  background-repeat: repeat;    
+  background-position: center;
+  height: 11rem;
+}
+  
+  .navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style-type: none;
+    text-align: center;
+    
+    
+}
+
+  /*   ======== ESTILOS DE MAIN ========== */
+  
+  .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+  }
+  .card{
+      background: transparent;
+      text-align: center;
+  }
+  
+  h2{
+    text-align: center;
+  }
+  
+  /*   ======== ESTILOS DE FOOTER ========== */
+  
+  .footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+  
+    padding: 2rem;
+    height: 15rem;
+  
+    margin-bottom: 50px;
+    list-style-type: none;
+    
+  }
+  
+  .nav_footer {
+    width: 100%;
+    margin: 0 20px 0 0;
+  
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+list-style-type: none;
+  }
+  
+  .a_footer {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    color: rgba(24, 93, 158, 0.945);
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    
+  }
+
+  li{
+    list-style-type: none;
+  }
+  
+  .footer_copyright {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* MOBILE FIRST */
+  
+  @media only screen and (max-width: 480px) {
+    .grid_padre {
+      display: grid;
+      grid-template-areas:
+        "titulo titulo"
+        "texto texto"
+        "im1 im2"
+        "im3 im4"
+        "pie pie"
+        "derecho derecho";
+      grid-template-rows: 50px 150px auto auto;
+      grid-template-columns: 50% 50%;
+    }
+  }
+  
+  /* TABLET */
+  
+  @media screen and  (max-width:  768px) {
+    .grid_padre {
+      display: grid;
+      grid-template-areas:
+        "titulo titulo titulo"
+        "texto texto im1"
+        "im2 im3 im4"
+        "pie pie pie"
+      "derecho derecho derecho";
+      grid-template-rows: 50px 150px auto auto;
+      grid-template-columns: 50% 50%;
+    }
+  }
+  
+  /* DESKTOP */
+  @media screen and ( max-width: 1200px) {
+    .grid_padre {
+      display: grid;
+      grid-template-areas:
+        "titulo titulo titulo"
+        "texto texto im1"
+        "im2 im3 im4"
+        "pie pie pie"
+        "derecho derecho derecho";
+      grid-template-rows: 50px 150px auto auto;
+      grid-template-columns: 50% 50%;
+    }
+  }
+  
+  
+  /* ======== CONFIGURACIÓN DE PRODUCTOS ========== */
+  
+  .grid_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 300px 50px 300px 50px 300px auto;
+    grid-template-areas:
+      "titulo titulo titulo"
+      "h m i"
+      "ph pm pi"
+      "pah pam pai"
+      "th tm ti" 
+      "pie pie pie"
+      "derecho derecho derecho";
+  
+    justify-items: center;
+    align-content: center;
+  }
+  
+  .hombres {
+  
+    grid-area: h;
+  }
+  .playeras_hombre{
+  
+    grid-area: ph;
+  } 
+  .pants_hombre{
+  
+    grid-area: pah ;
+  }
+  .tennis_hombre{
+  
+    grid-area:th ;
+  }
+  
+  
+  
+  
+  
+  .mujeres {
+  
+    grid-area: m;
+  }
+  .playeras_mujer {
+  
+    grid-area: pm;
+  }
+  .pants_mujer{
+  
+    grid-area:pam ;
+  }
+  .tennis_mujer{
+  
+    grid-area:tm;
+  }
+  
+  
+  .infantil {
+  
+    grid-area: i;
+  }
+  .playeras_infantil{
+  
+    grid-area: pi;
+  }
+  .pants_infantil{
+  
+    grid-area:pai ;
+  }
+  .tennis_infantil{
+  
+    grid-area:ti ;
+  }
+  
+  /* MOBILE FIRST */
+  
+  @media only screen and (max-width: 480px) {
+    grid_productos {
+      display: grid;
+      grid-template-areas:
+      "h ph"
+      "pah th"
+      "m pm"
+      "pam tm"
+      "i pi"
+      "pai ti "
+      "pie pie"
+      "derecho derecho";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 50px 300px 50px 300px 50px 300px auto;
+    }
+  }
+  
+  /* TABLET */
+  
+  @media screen and  (min-width:  768px) {
+    grid_productos {
+      display: grid;
+      grid-template-areas:
+      "titulo titulo titulo"
+      "h m i"
+      "ph pm pi"
+      "pah pam pai"
+      "th tm ti" 
+      "pie pie pie"
+      "derecho derecho derecho";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 50px 300px 50px 300px 50px 300px auto;
+    }
+  }
+  
+  /* DESKTOP */
+  @media screen and ( min-width: 1200px) {
+    grid_productos {
+      display: grid;
+      grid-template-areas:
+      "titulo titulo titulo"
+      "h m i"
+      "ph pm pi"
+      "pah pam pai"
+      "th tm ti" 
+      "pie pie pie"
+      "derecho derecho derecho";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 50px 300px 50px 300px 50px 300px auto;
+    }
+  
+}
+  
